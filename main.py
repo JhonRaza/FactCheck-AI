@@ -1,6 +1,6 @@
 import argparse
 import sys
-sys.path.append('src')  # Ensure we can import from src/
+sys.path.append('src')
 from src.fact_checking import fact_check_query_cli, query_huggingface_api_cli
 import warnings
 warnings.simplefilter("ignore")
