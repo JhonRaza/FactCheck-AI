@@ -99,7 +99,7 @@ python main.py --query "Your fact-checking statement here"
 - 📢 Implement a feedback mechanism to refine results.
 
 
-Developed with ❤️ by Jhon Raza
+Developed by Jhon Raza
 
 
 
