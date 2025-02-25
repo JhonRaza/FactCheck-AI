@@ -4,7 +4,7 @@
 
 ### 1️⃣ Extract the ZIP File
 - Unzip the project folder to your preferred location.
-
+---
 ### 2️⃣ Set Up a Virtual Environment
 
 - Open a terminal or command prompt in the project folder.
@@ -27,12 +27,12 @@ venv\Scripts\activate
 ```sh
 source venv/bin/activate
 ```
-
+---
 ### 3️⃣ Install Dependencies
 ```sh
 pip install -r requirements.txt
 ```
-
+---
 ### 4️⃣ Run the Streamlit App
 - Start the Streamlit app with:
 ```sh
@@ -40,21 +40,21 @@ streamlit run Home.py
 ```
 - The application should open in your browser.
 - Use the sidebar to enter and save your Hugging Face API token.
-
+---
 ### 5️⃣ Add Your Hugging Face API Token
-Option 1: Setting API Key via Environment Variable (Temporary)
+#### Option 1: Setting API Key via Environment Variable (Temporary)
 - Works only for the current session.
 - If you restart the terminal, you'll need to set the key again.
-#### **For Windows:**
+##### **For Windows:**
 ```sh
 set HUGGINGFACEHUB_API_TOKEN=your_api_token_here
 ```
-#### **For Mac/Linux:**
+##### **For Mac/Linux:**
 ```sh
 export HUGGINGFACEHUB_API_TOKEN=your_api_token_here
 ```
 
-Option 2: Using a .env File (Permanent)
+#### Option 2: Using a .env File (Permanent)
 - Create a file named .env in the root directory.
 - Add the following line:
 ```sh
@@ -62,13 +62,15 @@ HUGGINGFACEHUB_API_TOKEN=your_api_token_here
 ```
 - The project will automatically load this key.
 
-Option 3: Setting API Key Using Streamlit Sidebar
+#### Option 3: Setting API Key Using Streamlit Sidebar
 - Open the Streamlit app.
 - Navigate to the LLM Implementation screen.
 - Enter your Hugging Face API token in the sidebar.
 - The token will be saved automatically for your session.
 
-### Run the Project
+---
+
+### 6️⃣ Run the Project
 #### Streamlit App
 ```sh
 streamlit run app.py
@@ -80,6 +82,8 @@ streamlit run app.py
 python main.py --query "Your fact-checking statement here"
 ```
 - Make sure you have set up the API key using either environment variables or a .env file.
+
+---
 
 ### Troubleshooting
 - ModuleNotFoundError? Ensure the virtual environment is activated before running the app.
